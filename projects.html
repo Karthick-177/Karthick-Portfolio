@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Karthick B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .proj-detail{ padding: 56px 0; border-bottom: 1px solid var(--border); }
+  .proj-detail:last-of-type{ border-bottom:none; }
+  .proj-head{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom: 18px; }
+  .proj-num{ font-family: var(--font-mono); color: var(--text-dim); font-size: 13px; }
+  .proj-list{ margin: 18px 0; padding-left: 20px; color: var(--text-muted); }
+  .proj-list li{ margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">karthick<span class="dot">.</span>b</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Projects</div>
+      <h1>Three builds, end to end.</h1>
+      <p class="lede">Each one covers the full path — data or model, an interface, and a way for someone else to actually run it.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:20px">
+    <div class="wrap">
+
+      <div class="proj-detail">
+        <div class="proj-head">
+          <div>
+            <div class="proj-num">01 / Deployed</div>
+            <h2>RAG Chatbot</h2>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">FAISS</span><span class="tag">Groq LLaMA</span><span class="tag">FastAPI</span>
+          </div>
+        </div>
+        <p>A Retrieval-Augmented Generation chatbot that answers questions from a custom knowledge base, combining FAISS vector search with Sentence Transformers for semantic retrieval and Groq's LLaMA 3.3 70B for fast, context-aware responses.</p>
+        <ul class="proj-list">
+          <li>FAISS vector search + Sentence Transformers (all-MiniLM-L6-v2) for semantic retrieval over a custom knowledge base</li>
+          <li>Groq LLaMA 3.3 70B as the LLM backend, with top-3 chunk retrieval for grounded responses</li>
+          <li>FastAPI backend with automatic Swagger docs, plus a dark-themed HTML/JS chat frontend</li>
+          <li>Deployed live on Hugging Face Spaces</li>
+        </ul>
+        <div class="links" style="margin-top:6px">
+          <a href="https://github.com/Karthick-177/Rag_chatbot" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="proj-detail">
+        <div class="proj-head">
+          <div>
+            <div class="proj-num">02 / Built &amp; Demoed</div>
+            <h2>AI Cricket Analytics System</h2>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span><span class="tag">Streamlit</span>
+          </div>
+        </div>
+        <p>An AI-powered cricket analytics web app with real-time ball detection, built for frame-level tracking at match speed.</p>
+        <ul class="proj-list">
+          <li>Real-time ball detection using YOLOv8 and OpenCV, tracking at match speed</li>
+          <li>Ball trajectory tracking and dynamic wide-ball detection logic for automated match event recognition</li>
+          <li>Streamlit dashboard with match analytics, live webcam detection, and output video generation for end-to-end demos</li>
+        </ul>
+        <div class="links" style="margin-top:6px">
+          <a href="https://github.com/Karthick-177/Cricket-CV" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="proj-detail">
+        <div class="proj-head">
+          <div>
+            <div class="proj-num">03 / Built &amp; Demoed</div>
+            <h2>TN Scheme Finder</h2>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">NLP</span><span class="tag">Streamlit</span><span class="tag">Web Scraping</span>
+          </div>
+        </div>
+        <p>A web application that helps citizens discover Tamil Nadu government schemes based on their eligibility, using NLP-based matching over a structured knowledge base.</p>
+        <ul class="proj-list">
+          <li>Keyword-based and semantic search to retrieve relevant scheme information</li>
+          <li>Structured knowledge base built from scraped government scheme data</li>
+          <li>Interactive Streamlit UI to filter schemes by category, age group, and occupation</li>
+        </ul>
+        <div class="links" style="margin-top:6px">
+          <a href="https://github.com/Karthick-177/TN-SchemeFinder" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="card" style="text-align:center; padding:48px 28px;">
+        <h2 style="margin-bottom:10px">More context on any of these?</h2>
+        <p style="margin-bottom:24px">Happy to walk through the architecture, trade-offs, or what I'd improve next.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-meta">© 2026 Karthick B · Built with intent, not a template.</div>
+    <div class="footer-links">
+      <a href="mailto:balukarthick2004@gmail.com">Email</a>
+      <a href="https://github.com/Karthick-177" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/karthick177" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

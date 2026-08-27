@@ -1,2 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karthick B — AI Engineer</title>
+<meta name="description" content="Karthick B — AI Engineer building real-world ML, computer vision, and NLP applications with Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!DOCTYPE html><html><head><title>Karthick's Portfolio</title></head><body><h1>Coming soon</h1></body></html>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">karthick<span class="dot">.</span>b</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-tag">$ whoami</div>
+        <h1>Karthick B<br>AI Engineer.</h1>
+        <p class="lede">I build practical Machine Learning and AI applications — from data pipelines to deployed models — using Python, YOLOv8, FAISS, and LangChain, with FastAPI and Streamlit for real deployment.</p>
+        <p>B.Tech CSE (AI &amp; Data Science) graduate based in Chennai, focused on computer vision, NLP, and retrieval-augmented systems. Looking for a Machine Learning Engineer or AI Engineer role where I can build and ship intelligent systems at scale.</p>
+        <div class="btn-row">
+          <a href="projects.html" class="btn btn-primary">View Projects →</a>
+          <a href="resume.html" class="btn">Resume</a>
+        </div>
+      </div>
+      <div id="hero-canvas"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Featured Work</div>
+        <h2>Three systems, shipped end to end.</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card project-card">
+          <div class="head"><h3>RAG Chatbot</h3></div>
+          <p><span class="status-dot"></span>Live on Hugging Face Spaces</p>
+          <p>Retrieval-augmented chatbot using FAISS vector search and Groq LLaMA 3.3 70B, with a FastAPI backend and dark-themed chat UI.</p>
+          <div class="tag-row">
+            <span class="tag">FAISS</span><span class="tag">Groq LLaMA</span><span class="tag">FastAPI</span>
+          </div>
+          <div class="links"><a href="https://github.com/Karthick-177/Rag_chatbot" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+
+        <div class="card project-card">
+          <div class="head"><h3>AI Cricket Analytics</h3></div>
+          <p>Real-time ball detection and trajectory tracking with YOLOv8, deployed as an interactive Streamlit dashboard.</p>
+          <div class="tag-row">
+            <span class="tag">YOLOv8</span><span class="tag">OpenCV</span><span class="tag">Streamlit</span>
+          </div>
+          <div class="links"><a href="https://github.com/Karthick-177/Cricket-CV" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+
+        <div class="card project-card">
+          <div class="head"><h3>TN Scheme Finder</h3></div>
+          <p>NLP-based tool that matches citizens to Tamil Nadu government schemes using semantic and keyword search.</p>
+          <div class="tag-row">
+            <span class="tag">NLP</span><span class="tag">Streamlit</span><span class="tag">Web Scraping</span>
+          </div>
+          <div class="links"><a href="https://github.com/Karthick-177/TN-SchemeFinder" target="_blank" rel="noopener">GitHub →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Stack</div>
+        <h2>Tools I actually build with.</h2>
+      </div>
+      <div class="term">
+        <div class="term-bar"><div class="term-dot"></div><div class="term-dot"></div><div class="term-dot"></div></div>
+        <div class="term-body">
+          <p style="margin-bottom:14px"><span class="prompt">&gt;</span> languages: Python, SQL</p>
+          <p style="margin-bottom:14px"><span class="prompt">&gt;</span> ml/ai: Scikit-learn, YOLOv8, OpenCV, FAISS, Sentence Transformers, LangChain, Hugging Face, Groq LLaMA</p>
+          <p style="margin-bottom:14px"><span class="prompt">&gt;</span> frameworks: TensorFlow, PyTorch</p>
+          <p style="margin-bottom:14px"><span class="prompt">&gt;</span> deployment: FastAPI, Streamlit, Hugging Face Spaces</p>
+          <p style="margin-bottom:0"><span class="prompt">&gt;</span> tools: Git, GitHub, Google Colab, VS Code</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="card" style="text-align:center; padding:56px 28px;">
+        <h2 style="margin-bottom:10px">Let's talk about your team's next AI hire.</h2>
+        <p style="max-width:520px; margin:0 auto 24px;">I'm actively looking for entry-level ML/AI Engineer roles — happy to walk through any of these projects in more detail.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-meta">© 2026 Karthick B · Built with intent, not a template.</div>
+    <div class="footer-links">
+      <a href="mailto:balukarthick2004@gmail.com">Email</a>
+      <a href="https://github.com/Karthick-177" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/karthick177" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="hero3d.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
